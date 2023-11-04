@@ -39,15 +39,28 @@ really fast.  So, in early 2020, I had enough of C++. That&rsquo;s when I heard 
 <p>I was stuck at home, with just Julia manual, and I thought, &ldquo;Why not give it a shot?&rdquo; I had a couple of ideas for modeling animal behavior, and I decided to try implementing them in Julia. Since then, I&rsquo;ve ditched C++, and now, when I need to write code that&rsquo;s fast, reliable, and efficient, Julia is my go-to. Looking back at the code I wrote for those two projects, which you can find <a href="https://github.com/GianlucaMastrantonio/multiple_animals_movement_model">here</a> and <a href="https://github.com/GianlucaMastrantonio/STAP_HMM_model">here</a>, even though they&rsquo;re not perfect, I&rsquo;m still amazed at how, with just a bit of knowledge, I could write code way faster than I ever could in C++.  These ideas are published (<a href="https://doi.org/10.1111/rssc.12561">here</a> and <a href="https://projecteuclid.org/journals/annals-of-applied-statistics/volume-16/issue-3/Modeling-animal-movement-with-directional-persistence-and-attractive-points/10.1214/21-AOAS1584.short">here</a>)</p>
 <p>I think that for a person that knows R, switching to Julia is extremly simple.  It only takes a couple of days to get the hang of it and start implementing complex models. In fact, all my PhD students and some of my master&rsquo;s students use Julia. I&rsquo;ve even given a few seminars on how to use Julia for speedy computations, and I thought it was a good idea to put it in a blog post.</p>
 <p>The codes I will use can be found also <a href="https://github.com/GianlucaMastrantonio/FromRtoJulia">here</a>.</p>
-<h1 id="the-model">The model</h1>
+<h1 id="tutorial">Tutorial</h1>
+<h2 id="the-model">The model</h2>
 <p>I just want to emphasize right from the start that I&rsquo;m not an expert, and I&rsquo;m pretty sure that there are better and different ways to do some of the things I&rsquo;m about to explain. I might even have some concepts completely misunderstood (there are still parts of Julia that I use without fully grasping). We can now start with the tutorial.</p>
-<p>My idea is to try to implement a simple Bayesian regression model. I will assume that the data $\mathbf{y} = (y_1, \dots , y_n)$ come from the model
+<p>My idea is to try to implement a simple Bayesian regression model. I will assume that the data \(\mathbf{y}=(y_1, \dots , y_n)\) come from the model
 $$
 \mathbf{y} = \mathbf{X}\boldsymbol{\beta}+ \boldsymbol{\epsilon}
 $$
-where $\boldsymbol{\epsilon} \sim N(\mathbf{0}, \sigma^2\mathbf{I})$, $\mathbf{X}$&rsquo; is a $n \times p$ matrix of coefficients and $\boldsymbol{\beta}$ is a $p-$ dimensional vector of regressors. The priors are
+where \(\boldsymbol{\epsilon} \sim N(\mathbf{0}, \sigma^2\mathbf{I})\), \(\mathbf{X}\) is a \(n \times p\) matrix of coefficients and  \(\boldsymbol{\beta}\) is a p-dimensional vector of regressors. The priors are
 $$
 \boldsymbol{\beta} \sim N(\mathbf{M}, \mathbf{V}) \ \ \ \ \ \ \ \ \ \ \ \sigma^2  \sim IG(a,b)
+$$
+Given these priors, the full conditionals of \(\boldsymbol{\beta}\) and \(\sigma^2\) are available in closed form and they are
+$$
+\boldsymbol{\beta} | \sigma^2, \mathbf{y} \sim N(\mathbf{M}_p, \mathbf{V}_p)
+$$
+with
+$$
+\mathbf{V}_p = \left(\frac{n}{\sigma^2} + \mathbf{V}^{-1}\right)^{-1} \ \ \ \ \  \ \mathbf{M}_p = \mathbf{V}_p \left(\frac{\mathbf{X}^T\mathbf{X}}{\sigma^2} + \mathbf{N}\mathbf{V}^{-1}\right)^{-1}
+$$
+and
+$$
+\sigma^2| \boldsymbol{\beta}, \mathbf{y} \sim IG \left(a+\frac{n}{2}, b+ \frac{\left( \mathbf{y}- \mathbf{X}\boldsymbol{\beta} \right)^T \left( \mathbf{y}- \mathbf{X}\boldsymbol{\beta} \right)}{2} \right)
 $$</p>
 <div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-julia" data-lang="julia"></code></pre></div><p><strong>The music I listen to while writing</strong></p>
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/6wtDAlsbBwBpTLxsIxqqUD?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
@@ -69,7 +82,7 @@ $$</p>
             return;
         }
         var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "Disqus_Comments" + '.disqus.com/embed.js';
+        s.src = '//' + "disqgmastrantonio" + '.disqus.com/embed.js';
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
     })();

@@ -52,6 +52,8 @@ $$
  \sigma^2| \boldsymbol{\beta}, \mathbf{y} \sim IG \left(a+\frac{n}{2}, b+ \frac{\left( \mathbf{y}- \mathbf{X}\boldsymbol{\beta} \right)^T \left( \mathbf{y}- \mathbf{X}\boldsymbol{\beta} \right)}{2} \right)
 $$
 
+## Julia 
+
 
 ```julia
 
