@@ -26,24 +26,31 @@ I think that for a person that knows R, switching to Julia is extremly simple.  
 The codes I will use can be found also [here](https://github.com/GianlucaMastrantonio/FromRtoJulia).
 
 
-# The model
+# Tutorial
+## The model
 
 I just want to emphasize right from the start that I'm not an expert, and I'm pretty sure that there are better and different ways to do some of the things I'm about to explain. I might even have some concepts completely misunderstood (there are still parts of Julia that I use without fully grasping). We can now start with the tutorial. 
 
-My idea is to try to implement a simple Bayesian regression model. I will assume that the data $\mathbf{y} = (y_1, \dots , y_n)$ come from the model
+My idea is to try to implement a simple Bayesian regression model. I will assume that the data \\(\mathbf{y}=(y_1, \dots , y_n)\\) come from the model
 $$
 \mathbf{y} = \mathbf{X}\boldsymbol{\beta}+ \boldsymbol{\epsilon}
 $$
-where \$\boldsymbol{\epsilon} \sim N(\mathbf{0}, \sigma^2\mathbf{I})\$, $\mathbf{X}$' is a $n \times p$ matrix of coefficients and $\boldsymbol{\beta}$ is a $p-$ dimensional vector of regressors. The priors are
+where \\(\boldsymbol{\epsilon} \sim N(\mathbf{0}, \sigma^2\mathbf{I})\\), \\(\mathbf{X}\\) is a \\(n \times p\\) matrix of coefficients and  \\(\boldsymbol{\beta}\\) is a p-dimensional vector of regressors. The priors are
 $$
 \boldsymbol{\beta} \sim N(\mathbf{M}, \mathbf{V}) \ \ \ \ \ \ \ \ \ \ \ \sigma^2  \sim IG(a,b)
 $$
-Given these priors, the full conditionals of $\boldsymbol{\beta}$ and $\sigma^2$ are available in closed form and they are
-\begin{align}
-\boldsymbol{\beta} | \sigma^2, \mathbf{y}& \sim N(\mathbf{M}_p, \mathbf{V}_p) \\
-\boldsymbol{\beta} | \sigma^2, \mathbf{y}& \sim N(\mathbf{M}_p, \mathbf{V}_p) 
-\end{align}
-
+Given these priors, the full conditionals of \\(\boldsymbol{\beta}\\) and \\(\sigma^2\\) are available in closed form and they are
+$$
+\boldsymbol{\beta} | \sigma^2, \mathbf{y} \sim N(\mathbf{M}_p, \mathbf{V}_p)
+$$
+with 
+$$
+\mathbf{V}_p = \left(\frac{n}{\sigma^2} + \mathbf{V}^{-1}\right)^{-1} \ \ \ \ \  \ \mathbf{M}_p = \mathbf{V}_p \left(\frac{\mathbf{X}^T\mathbf{X}}{\sigma^2} + \mathbf{N}\mathbf{V}^{-1}\right)^{-1}
+$$
+and
+$$
+ \sigma^2| \boldsymbol{\beta}, \mathbf{y} \sim IG \left(a+\frac{n}{2}, b+ \frac{\left( \mathbf{y}- \mathbf{X}\boldsymbol{\beta} \right)^T \left( \mathbf{y}- \mathbf{X}\boldsymbol{\beta} \right)}{2} \right)
+$$
 
 
 ```julia
