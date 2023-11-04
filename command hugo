@@ -1,0 +1,68 @@
+hugo new site myblog -f yml # creates the directory structure for your project 
+git clone https://github.com/wowchemy/starter-hugo-academic themes/academic --depth=1
+git clone https://github.com/chipzoller/hugo-clarity themes/clarity --depth=1
+hugo server -t clarity
+
+
+
+
+git clone https://github.com/yihui/hugo-xmin  themes/hugo-xmin --depth=1
+hugo server -t hugo-xmin
+hugo  -t minimal
+
+cd "/Users/gianlucamastrantonio/Dropbox (Politecnico di Torino Staff)/lavori/gitrepo/gianlucamastrantonio.github.io/themes/hugo-xmin/exampleSite/"
+
+hugo server --theme="/Users/gianlucamastrantonio/Dropbox (Politecnico di Torino Staff)/lavori/gitrepo/gianlucamastrantonio.github.io/themes/hugo-xmin/"
+
+127.0.0.1:1313 
+
+
+hugo server --theme="/Users/gianlucamastrantonio/Dropbox (Politecnico di Torino Staff)/lavori/gitrepo/gianlucamastrantonio.github.io/themes/hugo-xmin/" -D --baseURL //localhost:1313/
+
+hugo --theme="/Users/gianlucamastrantonio/Dropbox (Politecnico di Torino Staff)/lavori/gitrepo/gianlucamastrantonio.github.io/themes/hugo-xmin/"
+
+
+
+
+
+
+
+
+
+
+
+
+
+cd "/Users/gianlucamastrantonio/Dropbox (Politecnico di Torino Staff)/lavori/gitrepo/gianlucamastrantonio.github.io/themes/clarity/exampleSite/"
+
+hugo server --theme="/Users/gianlucamastrantonio/Dropbox (Politecnico di Torino Staff)/lavori/gitrepo/gianlucamastrantonio.github.io/themes/clarity"
+ --disableFastRender
+
+
+hugo  -t clarity
+
+
+
+git clone https://github.com/google/docsy themes/docsy 
+
+hugo server -t docsy
+hugo  -t docsy
+
+
+
+
+cd "/Users/gianlucamastrantonio/Dropbox (Politecnico di Torino Staff)/lavori/gitrepo/gianlucamastrantonio.github.io/"
+
+hugo server --theme="/Users/gianlucamastrantonio/Dropbox (Politecnico di Torino Staff)/lavori/gitrepo/gianlucamastrantonio.github.io/themes/hugo-xmin/"
+
+hugo --theme="/Users/gianlucamastrantonio/Dropbox (Politecnico di Torino Staff)/lavori/gitrepo/gianlucamastrantonio.github.io/themes/hugo-xmin/"
+
+
+
+hugo  --theme="/Users/gianlucamastrantonio/Dropbox (Politecnico di Torino Staff)/lavori/gitrepo/gianlucamastrantonio.github.io/themes/clarity"
+
+hugo  --theme="/Users/gianlucamastrantonio/Dropbox (Politecnico di Torino Staff)/lavori/gitrepo/gianlucamastrantonio.github.io/themes/hugo-xmin/"
+
+
+
+hugo server  --renderToDisk --gc --cleanDestinationDir --theme="/Users/gianlucamastrantonio/Dropbox (Politecnico di Torino Staff)/lavori/gitrepo/gianlucamastrantonio.github.io/themes/hugo-xmin/"

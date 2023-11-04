@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>machine learning on A minimal Hugo website</title>
+    <link>/tags/machine-learning/</link>
+    <description>Recent content in machine learning on A minimal Hugo website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 10 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How To use Jupyter Notebook As Hugo Blog Post</title>
+      <link>/post/2020/04/10/how-to-use-jupyter-notebook-as-hugo-blog-post/</link>
+      <pubDate>Fri, 10 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/post/2020/04/10/how-to-use-jupyter-notebook-as-hugo-blog-post/</guid>
+      <description>1using Pkg 2using Distributions 3Pkg.add(&amp;#34;Plots&amp;#34;) 4using Plots 5x = range(0, 10, length=100) 6y = sin.(x) 7plot(x, y) [32m[1m Resolving[22m[39m package versions... [32m[1m No Changes[22m[39m to `~/.julia/environments/v1.8/Project.toml` [32m[1m No Changes[22m[39m to `~/.julia/environments/v1.8/Manifest.toml` &lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt; 1!jupyter nbconvert --to markdown 2023-06-06-JuliaNotebook.ipynb syntax: extra token &amp;quot;nbconvert&amp;quot; after end of expression Stacktrace: [1] top-level scope @ ~/Dropbox (Politecnico di Torino Staff)/lavori/gitrepo/gianlucamastrantonio.github.io/notebooks/2023-06-06-JuliaNotebook.ipynb:1 </description>
+    </item>
+  </channel>
+</rss>

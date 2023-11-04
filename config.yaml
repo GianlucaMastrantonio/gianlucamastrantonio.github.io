@@ -1,0 +1,63 @@
+baseurl: "/"
+languageCode: "en-us"
+title: "A minimal Hugo website"
+theme: "hugo-xmin"
+googleAnalytics: ""
+disqusShortname: ""
+ignoreFiles: ["\\.Rmd$", "\\.Rmarkdown$", "_cache$"]
+footnotereturnlinkcontents: "↩"
+
+permalinks:
+  note: "/note/:year/:month/:day/:slug/"
+  post: "/post/:year/:month/:day/:slug/"
+
+menu:
+  main:
+    - name: Home
+      url: ""
+      weight: 1
+    - name: About
+      url: "about/"
+      weight: 2
+    - name: Categories
+      url: "categories/"
+      weight: 3
+    - name: Tags
+      url: "tags/"
+      weight: 4
+    - name: Subscribe
+      url: "index.xml"
+
+params:
+  description: "A website built through Hugo and blogdown."
+  footer: "&copy; [Yihui Xie - GIAN](https://yihui.org) 2017 -- {Year} | [Github](https://github.com/yihui) | [Twitter](https://twitter.com/xieyihui)"
+#params:
+#    assets:
+#        disableHLJS: true
+
+#https://xyproto.github.io/splash/docs/all.html
+pygmentsCodefences: true
+pygmentsUseClasses:  false
+pygmentsUseClassic:  false
+#pygmentsStyle: monokai
+#pygmentsStyle: pygments
+pygmentsStyle: monokailight   
+#pygmentsStyle: emacs
+markup:
+  highlight:
+    codeFences: true
+    guessSyntax: true
+    hl_Lines: ""
+    hl_inline: false
+    lineAnchors: ""
+    lineNoStart: 1
+    lineNos: true
+    lineNumbersInTable: false
+    noClasses: true
+    noHl: false
+    #style: monokai
+    #tabWidth: 4
+  goldmark:
+    renderer:
+      unsafe: true
+

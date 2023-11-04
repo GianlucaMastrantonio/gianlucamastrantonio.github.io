@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R on A minimal Hugo website</title>
+    <link>/categories/r/</link>
+    <description>Recent content in R on A minimal Hugo website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 24 Jul 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/categories/r/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>R</title>
+      <link>/post/2016/07/24/r/</link>
+      <pubDate>Sun, 24 Jul 2016 00:00:00 +0000</pubDate>
+      <guid>/post/2016/07/24/r/</guid>
+      <description>This is a test
+x &amp;lt;- 3 * 4 x ## [1] 12 plot(x) X ∼ N)</description>
+    </item>
+  </channel>
+</rss>

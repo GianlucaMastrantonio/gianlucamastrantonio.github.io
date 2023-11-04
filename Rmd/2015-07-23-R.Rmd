@@ -1,0 +1,23 @@
+---
+title: JULIA
+date: '2015-07-24'
+categories:
+  - R
+tags:
+  - Markdown
+output: md_document
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+This is a test
+```{r  message = FALSE, echo=TRUE}
+
+x <- 3 * 4
+x
+plot(x)
+
+```
+$X \sim N)$
+
