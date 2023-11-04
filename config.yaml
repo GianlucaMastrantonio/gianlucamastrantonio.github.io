@@ -1,6 +1,6 @@
 baseurl: "/"
 languageCode: "en-us"
-title: "A minimal Hugo website"
+title: "My Site"
 theme: "hugo-xmin"
 googleAnalytics: ""
 disqusShortname: ""
@@ -16,7 +16,7 @@ menu:
     - name: Home
       url: ""
       weight: 1
-    - name: About
+    - name: About Me
       url: "about/"
       weight: 2
     - name: Categories
@@ -25,12 +25,12 @@ menu:
     - name: Tags
       url: "tags/"
       weight: 4
-    - name: Subscribe
-      url: "index.xml"
+    #- name: Subscribe
+    #  url: "index.xml"
 
 params:
   description: "A website built through Hugo and blogdown."
-  footer: "&copy; [Yihui Xie - GIAN](https://yihui.org) 2017 -- {Year} | [Github](https://github.com/yihui) | [Twitter](https://twitter.com/xieyihui)"
+  footer: "&copy; [Gianluca Mastrantonio](https://www.polito.it/personale?p=041089) 2023 -- {Year} | [Github](https://github.com/GianlucaMastrantonio) | [Researchgate](https://www.researchgate.net/profile/Gianluca-Mastrantonio)"
 #params:
 #    assets:
 #        disableHLJS: true
