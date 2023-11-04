@@ -38,8 +38,11 @@ where \$\boldsymbol{\epsilon} \sim N(\mathbf{0}, \sigma^2\mathbf{I})\$, $\mathbf
 $$
 \boldsymbol{\beta} \sim N(\mathbf{M}, \mathbf{V}) \ \ \ \ \ \ \ \ \ \ \ \sigma^2  \sim IG(a,b)
 $$
-
-
+Given these priors, the full conditionals of $\boldsymbol{\beta}$ and $\sigma^2$ are available in closed form and they are
+\begin{align}
+\boldsymbol{\beta} | \sigma^2, \mathbf{y}& \sim N(\mathbf{M}_p, \mathbf{V}_p) \\
+\boldsymbol{\beta} | \sigma^2, \mathbf{y}& \sim N(\mathbf{M}_p, \mathbf{V}_p) 
+\end{align}
 
 
 
