@@ -8,10 +8,10 @@
     <loc>/post/2023/11/02/from-r-to-julia/</loc>
     <lastmod>2023-11-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/</loc>
+    <loc>/tags/julia/</loc>
     <lastmod>2023-11-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/julia/</loc>
+    <loc>/</loc>
     <lastmod>2023-11-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/post/</loc>
@@ -69,5 +69,7 @@
     <lastmod>2015-07-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/about/</loc>
+  </url><url>
+    <loc>/ddd_index/</loc>
   </url>
 </urlset>
