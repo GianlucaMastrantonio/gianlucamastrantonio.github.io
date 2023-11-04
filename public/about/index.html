@@ -32,90 +32,46 @@
 </div>
 
 <main>
-<p>This is the first working test</p>
+<p>Describing myself is never easy, but here goes: I&rsquo;m a Statistician who&rsquo;s really into Bayesian statistics, particularly from an applied problem-solving and implementation perspective. I work as an associate professor at the Polytechnic of Turin, in the Department of Mathematical Sciences.
+If you&rsquo;re curious about my research, check out my
+(<a href="https://www.polito.it/personale?p=041089">my institutional webpage</a>), my <a href="https://arxiv.org/search/stat?searchtype=author&amp;query=Mastrantonio,+G">Arxiv</a>,
+or my <a href="https://github.com/GianlucaMastrantonio">github page</a>, where you can also find codes related to my published papers.</p>
+<p>I&rsquo;ve also created a couple of packages</p>
+<ul>
+<li><a href="https://github.com/GianlucaMastrantonio/CircSpaceTime">CircSpaceTime</a>: It&rsquo;s an R package I made for analyzing Bayesian spatial circular data. For all the technical details, take a look at this <a href="https://doi.org/10.1080/00949655.2020.1725008">article</a>;</li>
+<li><a href="https://github.com/GianlucaMastrantonio/BayesSizeAndShape.jl">BayesSizeAndShape</a>: Here&rsquo;s a Julia package I put together for Bayesian regression models dealing with Size-And-Shape data. If you want to dive deep into the models, have a look at this <a href="https://doi.org/10.1016/j.spl.2023.109928">article</a>.</li>
+</ul>
+<p>I&rsquo;m into music (who isn&rsquo;t, right?), and at the bottom of this page, you can check out a Spotify player with a chunk of the playlist that I listen to when I&rsquo;m working or just chilling.
+I used to play the guitar, but not so much these days.  Occasionally, I compose some electronic music, and I might share some of that here in the future.</p>
+<p>I&rsquo;m also into video games, reading manga, watching anime, movies, and TV series. I wish I read more books, but for some reason, I hardly ever do.</p>
+<p><strong>The spotify playlist</strong></p>
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2jIEv9jkBl9B75tNNF7cPS?utm_source=generator&theme=0" width="70%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-<!--
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/w7Ft2ymGmfc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
-   -->
-<p>The theme name &ldquo;XMin&rdquo; can be interpreted as &ldquo;<strong>X</strong>ie&rsquo;s <strong>Min</strong>imal theme&rdquo; (Xie is my last name) or &ldquo;e<strong>X</strong>tremely <strong>Min</strong>imal theme&rdquo;.</p>
-<h1 id="configyaml">config.yaml</h1>
-<p>For this example site, I defined permalinks for two sections, <code>post</code> and <code>note</code>, so that the links to pages under these directories will contain the date info, e.g., <code>https://xmin.yihui.org/post/2016/02/14/a-plain-markdown-post/</code>. This is optional, and it is up to your personal taste of URLs.</p>
-<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#f92672">permalinks</span><span style="color:#111">:</span>
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>  <span style="color:#f92672">note</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;/note/:year/:month/:day/:slug/&#34;</span>
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>  <span style="color:#f92672">post</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;/post/:year/:month/:day/:slug/&#34;</span>
-</span></span></code></pre></div><p>You can define the menu through <code>menu.main</code>, e.g.,</p>
-<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span><span style="color:#f92672">menu</span><span style="color:#111">:</span>
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span>  <span style="color:#f92672">main</span><span style="color:#111">:</span>
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span>    - <span style="color:#f92672">name</span><span style="color:#111">:</span> <span style="color:#ae81ff">Home</span>
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span>      <span style="color:#f92672">url</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;&#34;</span>
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span>      <span style="color:#f92672">weight</span><span style="color:#111">:</span> <span style="color:#ae81ff">1</span>
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span>    - <span style="color:#f92672">name</span><span style="color:#111">:</span> <span style="color:#ae81ff">About</span>
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span>      <span style="color:#f92672">url</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;about/&#34;</span>
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span>      <span style="color:#f92672">weight</span><span style="color:#111">:</span> <span style="color:#ae81ff">2</span>
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span>    - <span style="color:#f92672">name</span><span style="color:#111">:</span> <span style="color:#ae81ff">Categories</span>
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span>      <span style="color:#f92672">url</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;categories/&#34;</span>
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span><span>      <span style="color:#f92672">weight</span><span style="color:#111">:</span> <span style="color:#ae81ff">3</span>
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span><span>    - <span style="color:#f92672">name</span><span style="color:#111">:</span> <span style="color:#ae81ff">Tags</span>
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span><span>      <span style="color:#f92672">url</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;tags/&#34;</span>
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span><span>      <span style="color:#f92672">weight</span><span style="color:#111">:</span> <span style="color:#ae81ff">4</span>
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15</span><span>    - <span style="color:#f92672">name</span><span style="color:#111">:</span> <span style="color:#ae81ff">Subscribe</span>
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16</span><span>      <span style="color:#f92672">url</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;index.xml&#34;</span>
-</span></span></code></pre></div><p>Alternatively, you can add <code>menu: main</code> to the YAML metadata of any of your pages, so that these pages will appear in the menu.</p>
-<p>The page footer can be defined in <code>.Params.footer</code>, and the text is treated as Markdown, e.g.,</p>
-<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>params:
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>  footer: &#34;&amp;copy; [Yihui Xie](https://yihui.org) 2017 -- {Year}&#34;
-</span></span></code></pre></div><p>Here <code>{Year}</code> means the year in which the site is built (usually the current year).</p>
-<h1 id="custom-layouts">Custom layouts</h1>
-<p>There are two layout files under <code>layouts/partials/</code> that you may want to override: <code>head_custom.html</code> and <code>foot_custom.html</code>. This is how you inject arbitrary HTML code to the head and foot areas. For example, this site has a file <code>layouts/partials/foot_custom.html</code> to support LaTeX math via MathJax and center images automatically:</p>
-<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#111">&lt;</span><span style="color:#f92672">script</span> <span style="color:#75af00">defer</span> <span style="color:#75af00">src</span><span style="color:#f92672">=</span><span style="color:#d88200">&#34;//yihui.org/js/math-code.js&#34;</span><span style="color:#111">&gt;&lt;/</span><span style="color:#f92672">script</span><span style="color:#111">&gt;</span>
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span><span style="color:#111">&lt;</span><span style="color:#f92672">script</span> <span style="color:#75af00">defer</span> <span style="color:#75af00">src</span><span style="color:#f92672">=</span><span style="color:#d88200">&#34;//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML&#34;</span><span style="color:#111">&gt;</span>
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span><span style="color:#111">&lt;/</span><span style="color:#f92672">script</span><span style="color:#111">&gt;</span>
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span><span style="color:#111">&lt;</span><span style="color:#f92672">script</span> <span style="color:#75af00">defer</span> <span style="color:#75af00">src</span><span style="color:#f92672">=</span><span style="color:#d88200">&#34;//yihui.org/js/center-img.js&#34;</span><span style="color:#111">&gt;&lt;/</span><span style="color:#f92672">script</span><span style="color:#111">&gt;</span>
-</span></span></code></pre></div><p>You can certainly enable highlight.js for syntax highlighting by yourself through <code>head_custom.html</code> and <code>foot_custom.html</code> if you want.</p>
-<p>If you do not like the default fonts (e.g., <code>Palatino</code>), you may provide your own <code>static/css/fonts.css</code> under the root directory of your website to override the <code>fonts.css</code> in the theme.</p>
-<h1 id="other-features">Other features</h1>
-<p>I could have added more features to this theme, but I decided not to, since I have no intention to make this theme feature-rich. However, I will teach you how. I have prepared several examples via pull requests at <a href="https://github.com/yihui/hugo-xmin/pulls">https://github.com/yihui/hugo-xmin/pulls</a>, so that you can see the implementations of these features when you check out the diffs in the pull requests. For example, you can:</p>
-<ul>
-<li>
-<p><a href="https://github.com/yihui/hugo-xmin/pull/3">Enable Google Analytics</a></p>
-</li>
-<li>
-<p><a href="https://github.com/yihui/hugo-xmin/pull/4">Enable Disqus comments</a></p>
-</li>
-<li>
-<p><a href="https://github.com/yihui/hugo-xmin/pull/5">Enable highlight.js for syntax highlighting of code blocks</a></p>
-</li>
-<li>
-<p><a href="https://github.com/yihui/hugo-xmin/pull/2">Display categories and tags on a page</a></p>
-</li>
-<li>
-<p><a href="https://github.com/yihui/hugo-xmin/pull/7">Add a table of contents</a></p>
-</li>
-<li>
-<p><a href="https://github.com/yihui/hugo-xmin/pull/6">Add a link in the footer of each page to &ldquo;Edit this page&rdquo; on Github</a></p>
-</li>
-</ul>
-<p>To fully understand these examples, you have to read <a href="https://bookdown.org/yihui/blogdown/templates.html">the section on Hugo templates</a> in the <strong>blogdown</strong> book.</p>
-<h1 id="design-philosophy">Design philosophy</h1>
-<p>Lastly, a few words about my design philosophy for this theme: I have been relying on existing frameworks like Bootstrap for years since I&rsquo;m not really a designer, and I was always scared by the complexity of CSS.</p>
-<p>When I started writing this theme, I asked myself, &ldquo;<em>What if I just write from scratch?</em>&rdquo; No Bootstrap. No Normalize.css. I don&rsquo;t care about IE (life could be so much easier without IE) or inconsistencies among browsers (for personal websites). As long as the theme looks okay in Chrome, Firefox, and Safari, I&rsquo;m done. Thanks to the simplicity of Markdown, you cannot really produce very complicated HTML, and I think styling the HTML output from Markdown is much simpler than general HTML documents. For example, I do not need to care much about form elements like textareas or buttons.</p>
-<p>After I finished this theme, I started to wonder why I&rsquo;d need <code>normalize.css</code> at all (it sounds like a religious belief). The default appearance of modern browsers actually looks pretty good in my eyes, after I tweak the typeface a little bit.</p>
-<p>Compared to inconsistencies across browsers, I care much more about these properties of HTML elements:</p>
-<ul>
-<li>Tables should always be centered, and striped tables are easier to read especially when they are wide. Tables should not have vertical borders.</li>
-<li>An image should be centered if it is the only child element of a paragraph.</li>
-<li>The <code>max-width</code> of images, videos, and iframes should be <code>100%</code>.</li>
-</ul>
-<p>I hope you can enjoy this theme. The source code is <a href="https://github.com/yihui/hugo-xmin">on Github</a>. Happy hacking!</p>
+<!--{{ template "_internal/disqus.html" . }}-->
 
 </main>
 
   <footer>
   
-  
+  <div id="disqus_thread"></div>
+<script type="application/javascript">
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "Disqus_Comments" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
 <script defer src="//yihui.org/js/math-code.js"></script>
 <script defer src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>

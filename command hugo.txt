@@ -66,3 +66,21 @@ hugo  --theme="/Users/gianlucamastrantonio/Dropbox (Politecnico di Torino Staff)
 
 
 hugo server  --renderToDisk --gc --cleanDestinationDir --theme="/Users/gianlucamastrantonio/Dropbox (Politecnico di Torino Staff)/lavori/gitrepo/gianlucamastrantonio.github.io/themes/hugo-xmin/"
+
+
+
+
+
+#####
+
+- [Enable Google Analytics](https://github.com/yihui/hugo-xmin/pull/3)
+
+- [Enable Disqus comments](https://github.com/yihui/hugo-xmin/pull/4)
+
+- [Enable highlight.js for syntax highlighting of code blocks](https://github.com/yihui/hugo-xmin/pull/5)
+
+- [Display categories and tags on a page](https://github.com/yihui/hugo-xmin/pull/2)
+
+- [Add a table of contents](https://github.com/yihui/hugo-xmin/pull/7)
+
+- [Add a link in the footer of each page to "Edit this page" on Github](https://github.com/yihui/hugo-xmin/pull/6)

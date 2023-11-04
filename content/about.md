@@ -3,109 +3,32 @@ title: About Me
 #author: Yihui Xie
 ---
 
+Describing myself is never easy, but here goes: I'm a Statistician who's really into Bayesian statistics, particularly from an applied problem-solving and implementation perspective. I work as an associate professor at the Polytechnic of Turin, in the Department of Mathematical Sciences.
+If you're curious about my research, check out my
+([my institutional webpage](https://www.polito.it/personale?p=041089)), my [Arxiv](https://arxiv.org/search/stat?searchtype=author&query=Mastrantonio,+G), 
+or my [github page](https://github.com/GianlucaMastrantonio), where you can also find codes related to my published papers. 
 
-This is the first working test
+
+I've also created a couple of packages
+- [CircSpaceTime](https://github.com/GianlucaMastrantonio/CircSpaceTime): It's an R package I made for analyzing Bayesian spatial circular data. For all the technical details, take a look at this [article](https://doi.org/10.1080/00949655.2020.1725008); 
+- [BayesSizeAndShape](https://github.com/GianlucaMastrantonio/BayesSizeAndShape.jl): Here's a Julia package I put together for Bayesian regression models dealing with Size-And-Shape data. If you want to dive deep into the models, have a look at this [article](https://doi.org/10.1016/j.spl.2023.109928).
+
+
+I'm into music (who isn't, right?), and at the bottom of this page, you can check out a Spotify player with a chunk of the playlist that I listen to when I'm working or just chilling.
+I used to play the guitar, but not so much these days.  Occasionally, I compose some electronic music, and I might share some of that here in the future. 
+
+I'm also into video games, reading manga, watching anime, movies, and TV series. I wish I read more books, but for some reason, I hardly ever do.
 
 
 
 
+
+
+
+
+**The spotify playlist**
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2jIEv9jkBl9B75tNNF7cPS?utm_source=generator&theme=0" width="70%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
 
 
-<!--{{< youtube w7Ft2ymGmfc >}}   -->
-
-
-The theme name "XMin" can be interpreted as "**X**ie's **Min**imal theme" (Xie is my last name) or "e**X**tremely **Min**imal theme".
-
-# config.yaml
-
-For this example site, I defined permalinks for two sections, `post` and `note`, so that the links to pages under these directories will contain the date info, e.g., `https://xmin.yihui.org/post/2016/02/14/a-plain-markdown-post/`. This is optional, and it is up to your personal taste of URLs.
-
-```yaml
-permalinks:
-  note: "/note/:year/:month/:day/:slug/"
-  post: "/post/:year/:month/:day/:slug/"
-```
-
-You can define the menu through `menu.main`, e.g.,
-
-```yaml
-menu:
-  main:
-    - name: Home
-      url: ""
-      weight: 1
-    - name: About
-      url: "about/"
-      weight: 2
-    - name: Categories
-      url: "categories/"
-      weight: 3
-    - name: Tags
-      url: "tags/"
-      weight: 4
-    - name: Subscribe
-      url: "index.xml"
-```
-
-Alternatively, you can add `menu: main` to the YAML metadata of any of your pages, so that these pages will appear in the menu.
-
-The page footer can be defined in `.Params.footer`, and the text is treated as Markdown, e.g.,
-
-```
-params:
-  footer: "&copy; [Yihui Xie](https://yihui.org) 2017 -- {Year}"
-```
-
-Here `{Year}` means the year in which the site is built (usually the current year).
-
-# Custom layouts
-
-There are two layout files under `layouts/partials/` that you may want to override: `head_custom.html` and `foot_custom.html`. This is how you inject arbitrary HTML code to the head and foot areas. For example, this site has a file `layouts/partials/foot_custom.html` to support LaTeX math via MathJax and center images automatically:
-
-```html
-<script defer src="//yihui.org/js/math-code.js"></script>
-<script defer src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
-
-<script defer src="//yihui.org/js/center-img.js"></script>
-```
-
-You can certainly enable highlight.js for syntax highlighting by yourself through `head_custom.html` and `foot_custom.html` if you want.
-
-If you do not like the default fonts (e.g., `Palatino`), you may provide your own `static/css/fonts.css` under the root directory of your website to override the `fonts.css` in the theme.
-
-# Other features
-
-I could have added more features to this theme, but I decided not to, since I have no intention to make this theme feature-rich. However, I will teach you how. I have prepared several examples via pull requests at https://github.com/yihui/hugo-xmin/pulls, so that you can see the implementations of these features when you check out the diffs in the pull requests. For example, you can:
-
-- [Enable Google Analytics](https://github.com/yihui/hugo-xmin/pull/3)
-
-- [Enable Disqus comments](https://github.com/yihui/hugo-xmin/pull/4)
-
-- [Enable highlight.js for syntax highlighting of code blocks](https://github.com/yihui/hugo-xmin/pull/5)
-
-- [Display categories and tags on a page](https://github.com/yihui/hugo-xmin/pull/2)
-
-- [Add a table of contents](https://github.com/yihui/hugo-xmin/pull/7)
-
-- [Add a link in the footer of each page to "Edit this page" on Github](https://github.com/yihui/hugo-xmin/pull/6)
-
-To fully understand these examples, you have to read [the section on Hugo templates](https://bookdown.org/yihui/blogdown/templates.html) in the **blogdown** book.
-
-# Design philosophy
-
-Lastly, a few words about my design philosophy for this theme: I have been relying on existing frameworks like Bootstrap for years since I'm not really a designer, and I was always scared by the complexity of CSS.
-
-When I started writing this theme, I asked myself, "_What if I just write from scratch?_" No Bootstrap. No Normalize.css. I don't care about IE (life could be so much easier without IE) or inconsistencies among browsers (for personal websites). As long as the theme looks okay in Chrome, Firefox, and Safari, I'm done. Thanks to the simplicity of Markdown, you cannot really produce very complicated HTML, and I think styling the HTML output from Markdown is much simpler than general HTML documents. For example, I do not need to care much about form elements like textareas or buttons.
-
-After I finished this theme, I started to wonder why I'd need `normalize.css` at all (it sounds like a religious belief). The default appearance of modern browsers actually looks pretty good in my eyes, after I tweak the typeface a little bit.
-
-Compared to inconsistencies across browsers, I care much more about these properties of HTML elements:
-
-- Tables should always be centered, and striped tables are easier to read especially when they are wide. Tables should not have vertical borders.
-- An image should be centered if it is the only child element of a paragraph.
-- The `max-width` of images, videos, and iframes should be `100%`.
-
-I hope you can enjoy this theme. The source code is [on Github](https://github.com/yihui/hugo-xmin). Happy hacking!
+<!--{{ template "_internal/disqus.html" . }}-->

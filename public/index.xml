@@ -6,8 +6,15 @@
     <description>Recent content in Home on My Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 10 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 02 Nov 2023 00:00:00 +0000</lastBuildDate>
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>From R to Julia</title>
+      <link>/post/2023/11/02/from-r-to-julia/</link>
+      <pubDate>Thu, 02 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>/post/2023/11/02/from-r-to-julia/</guid>
+      <description>I love programming and R is a fantastic language for statisticians. It&amp;rsquo;s super flexible and great for data treatment. R has a lot of great qualities, but speed isn&amp;rsquo;t one of them, which can be a problem if you&amp;rsquo;re a Bayesians dealing with complex models. I used to call C++ inside R code to speed things up, so I could do all the initial data handling in R, and then let C++ do the real computation.</description>
+    </item>
     <item>
       <title>How To use Jupyter Notebook As Hugo Blog Post</title>
       <link>/post/2020/04/10/how-to-use-jupyter-notebook-as-hugo-blog-post/</link>
@@ -51,10 +58,7 @@ Quisque mattis volutpat lorem vitae feugiat.</description>
       <link>/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/about/</guid>
-      <description>This is the first working test
-The theme name &amp;ldquo;XMin&amp;rdquo; can be interpreted as &amp;ldquo;Xie&amp;rsquo;s Minimal theme&amp;rdquo; (Xie is my last name) or &amp;ldquo;eXtremely Minimal theme&amp;rdquo;.
-config.yaml For this example site, I defined permalinks for two sections, post and note, so that the links to pages under these directories will contain the date info, e.g., https://xmin.yihui.org/post/2016/02/14/a-plain-markdown-post/. This is optional, and it is up to your personal taste of URLs.
-1permalinks: 2 note: &amp;#34;/note/:year/:month/:day/:slug/&amp;#34; 3 post: &amp;#34;/post/:year/:month/:day/:slug/&amp;#34; You can define the menu through menu.</description>
+      <description>Describing myself is never easy, but here goes: I&amp;rsquo;m a Statistician who&amp;rsquo;s really into Bayesian statistics, particularly from an applied problem-solving and implementation perspective. I work as an associate professor at the Polytechnic of Turin, in the Department of Mathematical Sciences. If you&amp;rsquo;re curious about my research, check out my (my institutional webpage), my Arxiv, or my github page, where you can also find codes related to my published papers.</description>
     </item>
   </channel>
 </rss>
