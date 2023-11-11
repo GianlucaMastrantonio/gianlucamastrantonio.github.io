@@ -9,24 +9,17 @@
     <lastBuildDate>Thu, 02 Nov 2023 00:00:00 +0000</lastBuildDate>
     <atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>dsds</title>
+      <link>/categories/dsds/</link>
+      <pubDate>Thu, 02 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>/categories/dsds/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Tutorials</title>
       <link>/categories/tutorials/</link>
       <pubDate>Thu, 02 Nov 2023 00:00:00 +0000</pubDate>
       <guid>/categories/tutorials/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Example</title>
-      <link>/categories/example/</link>
-      <pubDate>Wed, 14 Jun 2017 00:00:00 +0000</pubDate>
-      <guid>/categories/example/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>JULIA</title>
-      <link>/categories/julia/</link>
-      <pubDate>Fri, 24 Jul 2015 00:00:00 +0000</pubDate>
-      <guid>/categories/julia/</guid>
       <description></description>
     </item>
   </channel>

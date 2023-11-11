@@ -1,57 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My Site</title>
+    <title>Home on My Site</title>
     <link>/</link>
-    <description>Recent content on My Site</description>
+    <description>Recent content in Home on My Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 02 Nov 2023 00:00:00 +0000</lastBuildDate>
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>From R to Julia</title>
-      <link>/post/2023/11/02/from-r-to-julia/</link>
+      <link>/topic/2023-11-02-from-r-to-julia/</link>
       <pubDate>Thu, 02 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>/post/2023/11/02/from-r-to-julia/</guid>
+      <guid>/topic/2023-11-02-from-r-to-julia/</guid>
       <description>I love programming and R is a fantastic language for statisticians. It&amp;rsquo;s super flexible and great for data treatment. R has a lot of great qualities, but speed isn&amp;rsquo;t one of them, which can be a problem if you&amp;rsquo;re a Bayesians dealing with complex models. I used to call C++ inside R code to speed things up, so I could do all the initial data handling in R, and then let C++ do the real computation.</description>
     </item>
     <item>
-      <title>How To use Jupyter Notebook As Hugo Blog Post</title>
-      <link>/post/2020/04/10/how-to-use-jupyter-notebook-as-hugo-blog-post/</link>
-      <pubDate>Fri, 10 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>/post/2020/04/10/how-to-use-jupyter-notebook-as-hugo-blog-post/</guid>
-      <description>1using Pkg 2using Distributions 3Pkg.add(&amp;#34;Plots&amp;#34;) 4using Plots 5x = range(0, 10, length=100) 6y = sin.(x) 7plot(x, y) [32m[1m Resolving[22m[39m package versions... [32m[1m No Changes[22m[39m to `~/.julia/environments/v1.8/Project.toml` [32m[1m No Changes[22m[39m to `~/.julia/environments/v1.8/Manifest.toml` &lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt; 1!jupyter nbconvert --to markdown 2023-06-06-JuliaNotebook.ipynb syntax: extra token &amp;quot;nbconvert&amp;quot; after end of expression Stacktrace: [1] top-level scope @ ~/Dropbox (Politecnico di Torino Staff)/lavori/gitrepo/gianlucamastrantonio.github.io/notebooks/2023-06-06-JuliaNotebook.ipynb:1 </description>
-    </item>
-    <item>
-      <title>Another Note on A blogdown Tutorial</title>
-      <link>/note/2017/06/14/another-note/</link>
-      <pubDate>Wed, 14 Jun 2017 00:00:00 +0000</pubDate>
-      <guid>/note/2017/06/14/another-note/</guid>
-      <description>I just discovered an awesome tutorial on blogdown written by Alison. I have to admit this is the best blogdown tutorial I have seen so far.</description>
-    </item>
-    <item>
-      <title>A Quick Note on Two Beautiful Websites</title>
-      <link>/note/2017/06/13/a-quick-note/</link>
-      <pubDate>Tue, 13 Jun 2017 00:00:00 +0000</pubDate>
-      <guid>/note/2017/06/13/a-quick-note/</guid>
-      <description>To me, the two most impressive websites based on blogdown are:
-Rob J Hyndman&amp;rsquo;s personal website. Live Free or Dichotomize by Lucy and Nick et al. I&amp;rsquo;m sure there will be more.</description>
-    </item>
-    <item>
-      <title>JULIA</title>
-      <link>/post/2015/07/24/julia/</link>
-      <pubDate>Fri, 24 Jul 2015 00:00:00 +0000</pubDate>
-      <guid>/post/2015/07/24/julia/</guid>
-      <description>This is a test
-1function func(x) 2 # ... 3end </description>
-    </item>
-    <item>
-      <title>Lorem Ipsum</title>
-      <link>/post/2015/07/23/lorem-ipsum/</link>
-      <pubDate>Thu, 23 Jul 2015 00:00:00 +0000</pubDate>
-      <guid>/post/2015/07/23/lorem-ipsum/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-Quisque mattis volutpat lorem vitae feugiat.</description>
+      <title>rr</title>
+      <link>/project/2023-11-09-animal-movement/</link>
+      <pubDate>Thu, 02 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>/project/2023-11-09-animal-movement/</guid>
+      <description>dsdsdsdsdsds dsds dsds dsds</description>
     </item>
     <item>
       <title>About Me</title>
@@ -59,14 +28,6 @@ Quisque mattis volutpat lorem vitae feugiat.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/about/</guid>
       <description>Describing myself is never easy, but here goes: I&amp;rsquo;m a Statistician who&amp;rsquo;s really into Bayesian statistics, particularly from an applied problem-solving and implementation perspective. I work as an associate professor at the Polytechnic of Turin, in the Department of Mathematical Sciences. If you&amp;rsquo;re curious about my research, check out my (my institutional webpage), my Arxiv, or my github page, where you can also find codes related to my published papers.</description>
-    </item>
-    <item>
-      <title>Home</title>
-      <link>/ddd_index/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/ddd_index/</guid>
-      <description>My Blog (Still Under Construction) - Gianluca Mastrantonio - Welcome to my personal blog! This is my first attempt at blogging, and I&amp;rsquo;m embarking on this journey with no clear destination in mind. If you&amp;rsquo;re curious to learn more about me, my interests, or what I do, you can find that information here.
-Currently, the website maintains a minimalist design, as I wanted to avoid investing too much time in customization, considering I&amp;rsquo;m not entirely certain how, and if, I&amp;rsquo;ll utilize this platform.</description>
     </item>
   </channel>
 </rss>

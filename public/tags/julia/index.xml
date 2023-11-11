@@ -10,9 +10,9 @@
     <atom:link href="/tags/julia/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>From R to Julia</title>
-      <link>/post/2023/11/02/from-r-to-julia/</link>
+      <link>/topic/2023-11-02-from-r-to-julia/</link>
       <pubDate>Thu, 02 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>/post/2023/11/02/from-r-to-julia/</guid>
+      <guid>/topic/2023-11-02-from-r-to-julia/</guid>
       <description>I love programming and R is a fantastic language for statisticians. It&amp;rsquo;s super flexible and great for data treatment. R has a lot of great qualities, but speed isn&amp;rsquo;t one of them, which can be a problem if you&amp;rsquo;re a Bayesians dealing with complex models. I used to call C++ inside R code to speed things up, so I could do all the initial data handling in R, and then let C++ do the real computation.</description>
     </item>
   </channel>

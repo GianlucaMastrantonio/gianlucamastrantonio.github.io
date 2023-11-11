@@ -9,6 +9,27 @@
     <lastBuildDate>Thu, 02 Nov 2023 00:00:00 +0000</lastBuildDate>
     <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>dsdsProgramming</title>
+      <link>/tags/dsdsprogramming/</link>
+      <pubDate>Thu, 02 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>/tags/dsdsprogramming/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>dsdsR</title>
+      <link>/tags/dsdsr/</link>
+      <pubDate>Thu, 02 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>/tags/dsdsr/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>fd</title>
+      <link>/tags/fd/</link>
+      <pubDate>Thu, 02 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>/tags/fd/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Julia</title>
       <link>/tags/julia/</link>
       <pubDate>Thu, 02 Nov 2023 00:00:00 +0000</pubDate>
@@ -27,41 +48,6 @@
       <link>/tags/r/</link>
       <pubDate>Thu, 02 Nov 2023 00:00:00 +0000</pubDate>
       <guid>/tags/r/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>data science</title>
-      <link>/tags/data-science/</link>
-      <pubDate>Fri, 10 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>/tags/data-science/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>hugo</title>
-      <link>/tags/hugo/</link>
-      <pubDate>Fri, 10 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>/tags/hugo/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>machine learning</title>
-      <link>/tags/machine-learning/</link>
-      <pubDate>Fri, 10 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>/tags/machine-learning/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Tutorial</title>
-      <link>/tags/tutorial/</link>
-      <pubDate>Wed, 14 Jun 2017 00:00:00 +0000</pubDate>
-      <guid>/tags/tutorial/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Markdown</title>
-      <link>/tags/markdown/</link>
-      <pubDate>Fri, 24 Jul 2015 00:00:00 +0000</pubDate>
-      <guid>/tags/markdown/</guid>
       <description></description>
     </item>
   </channel>

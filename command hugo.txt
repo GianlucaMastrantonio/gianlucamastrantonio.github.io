@@ -4,7 +4,7 @@ git clone https://github.com/chipzoller/hugo-clarity themes/clarity --depth=1
 hugo server -t clarity
 
 
-
+--disableFastRender
 
 git clone https://github.com/yihui/hugo-xmin  themes/hugo-xmin --depth=1
 hugo server -t hugo-xmin
@@ -12,7 +12,7 @@ hugo  -t minimal
 
 cd "/Users/gianlucamastrantonio/Dropbox (Politecnico di Torino Staff)/lavori/gitrepo/gianlucamastrantonio.github.io/themes/hugo-xmin/exampleSite/"
 
-hugo server --theme="/Users/gianlucamastrantonio/Dropbox (Politecnico di Torino Staff)/lavori/gitrepo/gianlucamastrantonio.github.io/themes/hugo-xmin/"
+hugo server --disableFastRender --theme="/Users/gianlucamastrantonio/Dropbox (Politecnico di Torino Staff)/lavori/gitrepo/gianlucamastrantonio.github.io/themes/hugo-xmin/"
 
 127.0.0.1:1313 
 
