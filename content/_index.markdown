@@ -12,6 +12,8 @@ title: Home
 <!--## _Keep it simple, but not simpler_-->
 
 <div style="text-align: justify"> 
+
+
 Welcome to my personal blog! This is my first attempt at blogging, and I'm embarking on this journey with no clear destination in mind.  If you're curious to learn more about me, my interests, or what I do, you can find that information [here](/about/).
 
 
