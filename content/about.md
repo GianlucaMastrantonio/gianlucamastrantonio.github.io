@@ -3,6 +3,8 @@ title: About Me
 #author: Yihui Xie
 ---
 
+
+<style>body {text-align: justify}</style>
 Describing myself is never easy, but here goes: I'm a Statistician who's really into Bayesian statistics, particularly from an applied problem-solving and implementation perspective. I work as an associate professor at the Polytechnic of Turin, in the Department of Mathematical Sciences.
 If you're curious about my research, check out my
 ([my institutional webpage](https://www.polito.it/personale?p=041089)), my [Arxiv](https://arxiv.org/search/stat?searchtype=author&query=Mastrantonio,+G), 

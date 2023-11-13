@@ -11,6 +11,10 @@ permalinks:
   note: "/note/:year/:month/:day/:slug/"
   post: "/post/:year/:month/:day/:slug/"
 
+taxonomies:
+  category: categories
+  tag: tags
+
 menu:
   main:
     - name: Home
@@ -19,18 +23,21 @@ menu:
     - name: About Me
       url: "about/"
       weight: 2
-    - name: Projects
-      url: "project/"
+    - name: Posts
+      url: "topic/"
       weight: 3
-    #- name: Posts
-    #  url: "res/"
+    #- name: Research Projects
+    #  url: "project/"
     #  weight: 4
-    - name: Categories
-      url: "categories/"
+    #- name: Categories
+    #  url: "categories/"
+    #  weight: 5
+    #- name: Tags
+    #  url: "tags/"
+    #  weight: 6
+    - name: CV
+      url: "cv/"
       weight: 5
-    - name: Tags
-      url: "tags/"
-      weight: 6
     
     #- name: Subscribe
     #  url: "index.xml"

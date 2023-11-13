@@ -1,7 +1,7 @@
 ---
 title: "From R to Julia"
 date: 2023-11-02
-tags: ["Julia", "R", "Programming"]
+tags: ["Julia", "R", "Programming", "Statistics"]
 draft: false
 categories:
   - Tutorials

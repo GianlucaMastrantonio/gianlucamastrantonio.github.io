@@ -2,32 +2,42 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home on My Site</title>
-    <link>/</link>
+    <link>//localhost:1313/</link>
     <description>Recent content in Home on My Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 02 Nov 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Animal Movement and Behaviour</title>
+      <link>//localhost:1313/project/2023-11-09-animal-movement/</link>
+      <pubDate>Thu, 02 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/project/2023-11-09-animal-movement/</guid>
+      <description>During the Phd, I came across Movebank which is a huge online database for animal tracking data. This type of data, generally gather through a GPS device attached to an animal, which record its coordinate at fixed time point.
+Such data can be used to understand animal behaviour and how they move through space. There is a rich litaruture on the topic, and if you are itnerested you can read the book of Hooten et al.</description>
+    </item>
     <item>
       <title>From R to Julia</title>
-      <link>/topic/2023-11-02-from-r-to-julia/</link>
+      <link>//localhost:1313/topic/2023-11-02-from-r-to-julia/</link>
       <pubDate>Thu, 02 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>/topic/2023-11-02-from-r-to-julia/</guid>
+      <guid>//localhost:1313/topic/2023-11-02-from-r-to-julia/</guid>
       <description>I love programming and R is a fantastic language for statisticians. It&amp;rsquo;s super flexible and great for data treatment. R has a lot of great qualities, but speed isn&amp;rsquo;t one of them, which can be a problem if you&amp;rsquo;re a Bayesians dealing with complex models. I used to call C++ inside R code to speed things up, so I could do all the initial data handling in R, and then let C++ do the real computation.</description>
     </item>
     <item>
-      <title>rr</title>
-      <link>/project/2023-11-09-animal-movement/</link>
-      <pubDate>Thu, 02 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>/project/2023-11-09-animal-movement/</guid>
-      <description>dsdsdsdsdsds dsds dsds dsds</description>
+      <title>About Me</title>
+      <link>//localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/about/</guid>
+      <description>Describing myself is never easy, but here goes: I&amp;rsquo;m a Statistician who&amp;rsquo;s really into Bayesian statistics, particularly from an applied problem-solving and implementation perspective. I work as an associate professor at the Polytechnic of Turin, in the Department of Mathematical Sciences. If you&amp;rsquo;re curious about my research, check out my (my institutional webpage), my Arxiv, or my github page, where you can also find codes related to my published papers.</description>
     </item>
     <item>
-      <title>About Me</title>
-      <link>/about/</link>
+      <title>My CV</title>
+      <link>//localhost:1313/cv/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/about/</guid>
-      <description>Describing myself is never easy, but here goes: I&amp;rsquo;m a Statistician who&amp;rsquo;s really into Bayesian statistics, particularly from an applied problem-solving and implementation perspective. I work as an associate professor at the Polytechnic of Turin, in the Department of Mathematical Sciences. If you&amp;rsquo;re curious about my research, check out my (my institutional webpage), my Arxiv, or my github page, where you can also find codes related to my published papers.</description>
+      <guid>//localhost:1313/cv/</guid>
+      <description>WORK IN PROGRESS Selected Papers (November 2023) Donatelli, Aurora; Mastrantonio, Gianluca; Ciucci, Paolo (2022). Circadian activity of small brown bear populations living in human-dominated landscapes. In: SCIENTIFIC REPORTS, vol. 12. ISSN 2045-2322
+Mastrantonio, Gianluca (2022) Modeling animal movement with directional persistence and attractive points. In: THE ANNALS OF APPLIED STATISTICS, vol. 16. ISSN 1932-6157
+Mastrantonio, Gianluca (2022) The modelling of movement of multiple animals that share behavioural features. In: JOURNAL OF THE ROYAL STATISTICAL SOCIETY SERIES C-APPLIED STATISTICS.</description>
     </item>
   </channel>
 </rss>

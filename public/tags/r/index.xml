@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>R on My Site</title>
-    <link>/tags/r/</link>
+    <link>//localhost:1313/tags/r/</link>
     <description>Recent content in R on My Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 02 Nov 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/r/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/r/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>From R to Julia</title>
-      <link>/topic/2023-11-02-from-r-to-julia/</link>
+      <link>//localhost:1313/topic/2023-11-02-from-r-to-julia/</link>
       <pubDate>Thu, 02 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>/topic/2023-11-02-from-r-to-julia/</guid>
+      <guid>//localhost:1313/topic/2023-11-02-from-r-to-julia/</guid>
       <description>I love programming and R is a fantastic language for statisticians. It&amp;rsquo;s super flexible and great for data treatment. R has a lot of great qualities, but speed isn&amp;rsquo;t one of them, which can be a problem if you&amp;rsquo;re a Bayesians dealing with complex models. I used to call C++ inside R code to speed things up, so I could do all the initial data handling in R, and then let C++ do the real computation.</description>
     </item>
   </channel>

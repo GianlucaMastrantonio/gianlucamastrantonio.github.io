@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Projects on My Site</title>
-    <link>//localhost:1313/project/</link>
-    <description>Recent content in Projects on My Site</description>
+    <title>Hidden Markov Model on My Site</title>
+    <link>//localhost:1313/tags/hidden-markov-model/</link>
+    <description>Recent content in Hidden Markov Model on My Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 02 Nov 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="//localhost:1313/project/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/hidden-markov-model/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Animal Movement and Behaviour</title>
       <link>//localhost:1313/project/2023-11-09-animal-movement/</link>
