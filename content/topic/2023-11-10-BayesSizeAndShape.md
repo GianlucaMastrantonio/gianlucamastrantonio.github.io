@@ -34,10 +34,10 @@ To fix notation, we assume the following
 The model estimated is 
 $$\text{vec}(\mathbf{Y}\_i \mathbf{R}\_i') \sim\mathcal{N}\_{k p}\left(  \text{vec}\left(\sum_{h=1}^dz\_{ih}\mathbf{B}\_h\right), \mathbf{I}\_p \otimes \boldsymbol{\Sigma}\right), \,\qquad i = 1, \dots , n$$
 where
-* $\mathbf{Y}\_i$ is the i-th size-and-shape object;
-* $z_{ih}$ is a value of a covariate
-* $\mathbf{B}\_h$ is a matrix that contains regressive coefficients
-* $\boldsymbol{\Sigma}$ is a covariance matrix
+* \\(\mathbf{Y}\_i\\) is the i-th size-and-shape object;
+* \\(z_{ih}\\) is a value of a covariate
+* \\(\mathbf{B}\_h\\) is a matrix that contains regressive coefficients
+* \\(\boldsymbol{\Sigma}\\) is a covariance matrix
 
 The prior distributions are
 $$[\mathbf{B}\_h]_{jl} \sim N(m,v),\qquad \boldsymbol{\Sigma} \sim IW(\nu, \Psi)$$
@@ -77,7 +77,7 @@ There are different datasets in the package (in the package directory `data`), w
 ```julia
 julia> dataset_names()
 ```
-The data `dataset_rats` is a three-dimensional array of landmark of dimension $(k+1)\times p \times n$. We put the landmark in a `landmark` object and we divide all the points by 100.0 to work with smaller number
+The data `dataset_rats` is a three-dimensional array of landmark of dimension \\((k+1)\times p \times n\\). We put the landmark in a `landmark` object and we divide all the points by 100.0 to work with smaller number
 ```julia
 julia> landmark = dataset_rats.x;
 julia> landmark = landmark ./ 100.0
@@ -90,17 +90,17 @@ julia> for i = 2:size(landmark,3)
 end
 julia> title!("Landmarks")
 ```
-![Screenshot](figures/landmark.svg)
+![Screenshot](/topic/figures/landmark.svg)
 
 
 <br />
 <br />
 
-Even tough we only need the array `landmark` in the MCMC function, we can compute the **SizeAndShape** data (the variables $\mathbf{Y}_i$) used inside the MCMC function with 
+Even tough we only need the array `landmark` in the MCMC function, we can compute the **SizeAndShape** data (the variables \\(\mathbf{Y}_i\\)) used inside the MCMC function with 
 ```julia
 julia> sizeshape = sizeshape_helmertproduct_reflection(landmark);
 ```
-where `sizeshape[:,:,i]` is $\mathbf{Y}_i$, and plot them with 
+where `sizeshape[:,:,i]` is \\(\mathbf{Y}_i\\), and plot them with 
 
 ```julia
 julia> plot(sizeshape[:,1,1], sizeshape[:,2,1],legend = false, color = cgrad(:tab20, 21)[Int64(subject[1])])
@@ -109,7 +109,7 @@ julia> for i = 2:size(landmark,3)
 end
 julia> title!("Size And Shape")
 ```
-![Screenshot](figures/sizeshape.svg)
+![Screenshot](/topic/figures/sizeshape.svg)
 
 <br />
 <br />
@@ -162,7 +162,7 @@ Posterior samples of the parameters can be extracted using the following:
 julia> betaout = posterior_samples_beta(outmcmc);
 julia> sigmaout = posterior_samples_sigma(outmcmc);
 ```
-where `betaout` is a `DataFrame` that contains the posterior samples of $\mathbf{B}\_h$, while `sigmaout` is a `DataFrame` that contains the ones of $\boldsymbol{\Sigma}$. Each row is a posterior sample.
+where `betaout` is a `DataFrame` that contains the posterior samples of \\(\mathbf{B}\_h\\), while `sigmaout` is a `DataFrame` that contains the ones of \\(\boldsymbol{\Sigma}\\). Each row is a posterior sample.
 
 The column names of `betaout` are informative on which mark/dimension/covariates a specific regressive coefficient is connected
 ```julia
@@ -264,6 +264,8 @@ julia> names(predictive_obs)
 ```
 
 
-
+**The music I listen to while writing**
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/2EQuq6735uJj8T6xHZ1BPf?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/0CA2EVHhRPR5VPV78KZw89?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
 
