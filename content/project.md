@@ -7,40 +7,43 @@ title: Projects
 # WORK IN PROGRESS 
 
 # Projects (November 2023)
-Here there is a (non exhaustive) list of my past and current projects
+Here there is a (non-exhaustive) list of my past and current projects
 
 
 
-### Animal behaviour
+## Animal behaviour
 
 In this project I was mostly interested in the use of mixture model to understand animal behaviour.  What initially began as an exploration of a poly-cylindrical distribution I developed, took an unexpectedly fascinating turn as I delved into the world of understanding animal behavior.
-In my initial paper, we introduced a new formulation for the standard Logistic Gaussian process. What sets our approach apart from others is its invariance under the choice of the reference element, a feature not commonly found among competitors. You can read the details of this formulatiomn[here](https://projecteuclid.org/journals/annals-of-applied-statistics/volume-13/issue-4/New-formulation-of-the-logistic-Gaussian-process-to-analyze-trajectory/10.1214/19-AOAS1289.full). 
+In my initial paper, we introduced a new formulation for the standard Logistic Gaussian process. What sets our approach apart from others is its invariance under the choice of the reference element, a feature not commonly found among competitors. You can read the details of this formulation [here](https://projecteuclid.org/journals/annals-of-applied-statistics/volume-13/issue-4/New-formulation-of-the-logistic-Gaussian-process-to-analyze-trajectory/10.1214/19-AOAS1289.full). 
 
-Furthermore, I propose a novel distribution designed to model movement that exhibits both directional persistence and attraction to a specific point in space. The details of this innovative distribution can be found
+Furthermore, I propose a novel distribution designed to model movement that exhibits both directional persistence and attraction to a specific point in space. The details of this  distribution can be found
 [here](https://projecteuclid.org/journals/annals-of-applied-statistics/volume-16/issue-3/Modeling-animal-movement-with-directional-persistence-and-attractive-points/10.1214/21-AOAS1584.short). 
 
 And I present a new approach to modeling the movement of multiple animals, assuming they can share some movement features. Check out the full details ([link](https://academic.oup.com/jrsssc/article/71/4/932/7072964))
 
 
 
-### Models for Size and Shape data
+## Models for Size and Shape data
 
 This is a fairly new project for me. 
 With these type of data you are interested in on extracting information regarding the shape and size of the dataset. There are very few papers on the topic, particularly in the realm of Bayesian inference and modeling in general.  I have co-authored a paper ([here](https://www.sciencedirect.com/science/article/pii/S0167715223001529)) that introduces a linear regression extension to a published frequentist approach.
 The Julia package BayesSizeAndShape, that implement this model can be found  [here](https://github.com/GianlucaMastrantonio/BayesSizeAndShape.jl).
 
-### Circular and Cylindrical Random Variables
+## Circular and Cylindrical Random Variables
 
 Circular data was the topic of my Ph.D.
 My primary focus revolved around extending the Gaussian process to accommodate circular response variables. I introduced a new process based on the Skew-Normal distribution, along with extensions of the Wrapped GP and Projected GP. You can find more details  [here](https://link.springer.com/article/10.1007/s00477-015-1163-9) or [here](https://link.springer.com/article/10.1007/s11749-015-0458-y). An R package that implement some of these model is [CircSpaceTime](https://github.com/GianlucaMastrantonio/CircSpaceTime): the details are in the [article](https://doi.org/10.1080/00949655.2020.1725008)
 
 I proposed a new distribution for poly-cylindrical data, i.e., a distribution over a vector of linear and circular variables ([the paper](https://www.sciencedirect.com/science/article/pii/S0047259X17301069)), and I used cylindrical distributions in the context of Hidden Markov Models, for example  [link](https://link.springer.com/article/10.1007/s00477-015-1163-9) and [link](https://link.springer.com/article/10.1007/s11749-015-0458-y). 
 
+## Genetic Data
 
+I became involved in genetic data through my colleaguee [Enrico Bibbona](https://www.polito.it/en/staff?p=enrico.bibbona). 
+Currently, we are working on the use of mixture models for the grouping of kinetic rates that govern mRNA dynamics, as well as the analysis of RNA velocity. 
 
+<!--
 
-
-<!--## Environmental Statistics
+## Environmental Statistics
 
 ## Statistic in Medicine
 
@@ -52,21 +55,17 @@ I proposed a new distribution for poly-cylindrical data, i.e., a distribution ov
 
 ## Acustic Data
 
+## Climatic Modelling
 
-
-## Climatic Modelling-->
-
-
-
+-->
 
 # Selected Papers (November 2023)
-
+- Di Noia, Antonio; Mastrantonio, Gianluca; Jona Lasinio, Giovanna (2023). Bayesian size-and-shape regression modelling. In: Statistics & Probability Letters, vol. 204. 
 - Donatelli, Aurora; Mastrantonio, Gianluca; Ciucci, Paolo (2022). Circadian activity of small brown bear populations living in human-dominated landscapes. In: SCIENTIFIC REPORTS, vol. 12. ISSN 2045-2322
 - Mastrantonio, Gianluca  (2022)
 Modeling animal movement with directional persistence and attractive points. In: THE ANNALS OF APPLIED STATISTICS, vol. 16. ISSN 1932-6157
 - Mastrantonio, Gianluca (2022)
 The modelling of movement of multiple animals that share behavioural features. In: JOURNAL OF THE ROYAL STATISTICAL SOCIETY SERIES C-APPLIED STATISTICS. 
-
 -  Mastrantonio, Gianluca; Jona Lasinio, Giovanna; Pollice, Alessio; Teodonio, Lorenzo  (2021)
 A Dirichlet process model for change‐point detection with multivariate bioclimatic data. In: ENVIRONMETRICS. ISSN 1180-4009
 

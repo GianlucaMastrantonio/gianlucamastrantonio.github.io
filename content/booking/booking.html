@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Appointment Booking</title>
+  <style>
+    ul {
+      list-style-type: none;
+    }
+    li {
+      display: inline-block;
+      margin: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Appointment Booking</h1>
+  <h2>Available Time Slots:</h2>
+  <form action="save_appointment.php" method="post">
+    <ul>
+      <li><input type="checkbox" id="time-slot-1" name="time-slot[]" value="9:00 AM - 10:00 AM"><label for="time-slot-1">9:00 AM - 10:00 AM</label></li>
+      <li><input type="checkbox" id="time-slot-2" name="time-slot[]" value="10:00 AM - 11:00 AM"><label for="time-slot-2">10:00 AM - 11:00 AM</label></li>
+      <li><input type="checkbox" id="time-slot-3" name="time-slot[]" value="11:00 AM - 12:00 PM"><label for="time-slot-3">11:00 AM - 12:00 PM</label></li>
+      <!-- Add more time slots as needed -->
+    </ul>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br>
+    <button type="submit">Book Appointment</button>
+  </form>
+</body>
+</html>
